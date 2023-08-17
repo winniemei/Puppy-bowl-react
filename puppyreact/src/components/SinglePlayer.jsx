@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 
 export default function SinglePlayer() {
     const [player, setPlayer] = useState([]);
+    console.log(player)
     useEffect(() => {
         async function fetchSinglePlayer() {
             try {
-                const response = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2306-GHP-ET-WEB-FT-SF/players/${player}`);
+                const response = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2306-GHP-ET-WEB-FT-SF/players/${player.id}`);
                 const result = await response.json();
                 console.log(result);
                 setPlayer(result.data.player);

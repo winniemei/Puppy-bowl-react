@@ -7,10 +7,14 @@ import SinglePlayer from './components/SinglePlayer'
 import NavBar from './components/NavBar'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [selectedPup, setSelectedPup] = useState([]);
 
   return (
     <>
+   
+        <SinglePlayer selectedPup={selectedPup} setSelectedPup={setSelectedPup}  />
+      
       <Routes>
           <Route path='/' element={<AllPlayers/>} />
           <Route path="/SinglePlayer" element={<SinglePlayer />}></Route>
