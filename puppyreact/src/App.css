@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+a:link {
+  color: rgb(174, 206, 255);
+  background-color: transparent;
+  text-decoration: none;
+}

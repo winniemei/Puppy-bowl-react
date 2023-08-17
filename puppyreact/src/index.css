@@ -67,3 +67,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+a:link {
+  color: rgb(174, 206, 255);
+  background-color: transparent;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+}
