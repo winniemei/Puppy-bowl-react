@@ -19,17 +19,15 @@ export default function SinglePlayer() {
     }, [])
     return (
         <div>
-            <h1>SINGLE PLAYER</h1>
             <div>
                 {
 
                             <div>
-                                <h4>{player.name}</h4>
-                                <h4>{player.id}</h4>
-                                <h4>{player.breed}</h4>
+                                <h4>Name: {player.name}</h4>
+                                <h4>ID: {player.id}</h4>
+                                <h4>Breed: {player.breed}</h4>
                                 <img src={player.imageUrl} alt={player.name} />
-                                <h4>{player.status}</h4>
-                                <button className="back-button">Back to all players</button>
+                                <h4>Status: {player.status}</h4>
                             </div>
                     }
                 

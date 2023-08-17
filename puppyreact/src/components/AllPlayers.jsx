@@ -23,8 +23,8 @@ export default function AllPlayers() {
                     players.map((player) => {
                         return (
                             <div>
-                                <h4>{player.name}</h4>
-                                <h4>{player.breed}</h4>
+                                <h4>Name: {player.name}</h4>
+                                <h4>Breed: {player.breed}</h4>
                                 <img src={player.imageUrl} alt={player.name} />
                                 <Link to={`/SinglePlayer/${player.id}`}>See Details</Link>
                             </div>
