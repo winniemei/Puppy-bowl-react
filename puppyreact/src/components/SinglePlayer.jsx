@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 export default function SinglePlayer() {
     const [player, setPlayer] = useState([]);
     const routeParams = useParams().id;
-    console.log(player)
+    console.log(routeParams)
     useEffect(() => {
         async function fetchSinglePlayer() {
             try {

@@ -12,13 +12,10 @@ function App() {
 
   return (
     <>
-
-      {/* {selectedPup ? ( */}
-        <SinglePlayer selectedPup={selectedPup} setSelectedPup={setSelectedPup}  /> 
         
       <Routes>
           <Route path='/' element={<AllPlayers/>} />
-          <Route path="/SinglePlayer" element={<SinglePlayer />}></Route>
+          <Route path="/SinglePlayer/:id" element={<SinglePlayer />}></Route>
           <Route path="/NewPlayerForm" element={<NewPlayerForm />}></Route>
       </Routes>
       <NavBar />
