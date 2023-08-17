@@ -26,7 +26,7 @@ export default function AllPlayers() {
                                 <h4>{player.name}</h4>
                                 <h4>{player.breed}</h4>
                                 <img src={player.imageUrl} alt={player.name} />
-                                <Link to="/SinglePlayer/:id}">SEE DETAILS</Link>
+                                <Link to="/SinglePlayer/">SEE DETAILS</Link>
                             </div>
                         )
                     })
