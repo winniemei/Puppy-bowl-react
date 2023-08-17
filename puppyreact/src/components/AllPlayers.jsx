@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AllPlayers() {
     const [players, setPlayers] = useState([]);
-    const [featuredPupId, setFeaturedPupId] = useState([]);
     useEffect(() => {
         async function fetchAllPlayers() {
             try {
@@ -26,7 +26,7 @@ export default function AllPlayers() {
                                 <h4>{player.name}</h4>
                                 <h4>{player.breed}</h4>
                                 <img src={player.imageUrl} alt={player.name} />
-                                <button onClick={() => { setFeatured(player.id) }} key={player.id}>See details</button>
+                                <Link to="/SinglePlayer/{player.id}">SEE DETAILS</Link>
                             </div>
                         )
                     })
